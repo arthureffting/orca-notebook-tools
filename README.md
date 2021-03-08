@@ -122,6 +122,7 @@ plot(x,
      data,
      title="My orca plot",
      fillna=True,
+     save_to="my_orca_plot.png",
      resample="6M")
 
 # Calling plt.savefig will enable saving the generated plots
@@ -182,7 +183,7 @@ A list of pod/invididuals identified in the text, as well as whether tape inform
             "text": "A1 calls. #312B 100%",
             "pod_mentions": ["A1"],
             "tape": {
-              "number": "31", 
+              "number": "312", 
               "side": "B", 
               "starts": false, 
               "ends":  true
