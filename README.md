@@ -1,14 +1,16 @@
+`Please note: all example scripts' imports are realtive to the project root directory`
+
 # Orcalab notebooks analysis tools
 
 This repository contains a set of python tools to navigate and interpret the orca logbook data.
 
-It operates on handwritten data transcriptions stored as `json` objects in formats described in the `Format`section, 
-and can be reused if subsequent enhancements to the handwriting recognition of the logbook data are available.
+It operates on handwritten data transcriptions stored as `json` objects in formats described in the `Format`section, and
+can be reused if subsequent enhancements to the handwriting recognition of the logbook data are available.
+
 ## Structure
 
-Each page has been divided into left and right side, to account for timestamps identified in
-different sides of the image. These pages and the lines included in them have then been organized in the following data
-structures.
+Each page has been divided into left and right side, to account for timestamps identified in different sides of the
+image. These pages and the lines included in them have then been organized in the following data structures.
 
 ### Breakpoints
 
@@ -32,11 +34,13 @@ The `Data` class also offers functions to make plotting and saving filtered/comb
 
 ## Usage
 
-Not all available functions are described here, a set of more comprehensive usage examples can be found under `/examples`.
+Not all available functions are described here, a set of more comprehensive usage examples can be found
+under `/examples`.
 
 ### Load data
 
-Given a `json` file containing time ranges in the format described in the `Format` section of this document, it can be loaded onto a `Data` object.
+Given a `json` file containing time ranges in the format described in the `Format` section of this document, it can be
+loaded onto a `Data` object.
 
 ```python
 data = Data.read("timed_results.json")
@@ -44,7 +48,8 @@ data = Data.read("timed_results.json")
 
 ### Filter
 
-Some functions are provided to filter the data according to some parameter, for example, filtering lines that contain specific pod/individual/family mentions.
+Some functions are provided to filter the data according to some parameter, for example, filtering lines that contain
+specific pod/individual/family mentions.
 
 ```python
 # By refering only to the family ("A"), all mentions starting with the letter will be considered (e.g A26, A32, A5)
@@ -52,7 +57,8 @@ Some functions are provided to filter the data according to some parameter, for 
 a_data = data.with_pod_mentions(pods=["A"])
 ```
 
-Data can also be filtered by specific keywords according. Levenshtein distance is used to measure similarity and a threshold for the occurrence probability can be passed to the function.
+Data can also be filtered by specific keywords according. Levenshtein distance is used to measure similarity and a
+threshold for the occurrence probability can be passed to the function.
 
 ```python
 calls = data.with_keyword_mentions("calls", prob_threshold=0.75)
@@ -64,10 +70,10 @@ A function is also available to filter out lines containing tape mentions.
 tape_322B_mentions = data.with_tape_mentions(tapes=["322B"])
 ```
 
-
 ### Join
 
-For getting lines that match more than one selection criteria, data can be joined together. For example, we can get lines that mention `A` and `N` pods together.
+For getting lines that match more than one selection criteria, data can be joined together. For example, we can get
+lines that mention `A` and `N` pods together.
 
 ```python
 # By refering only to the family ("A"), all mentions starting with the letter will be considered (e.g A26, A32, A5)
@@ -89,9 +95,10 @@ a26_calls = Data.join(a26_data, calls)
 
 ### Data between lines
 
-Since one of the main interests is to evaluate handwritten data  of specific tape recordings, we can also use two specific lines of the dataset
-to extract only data between them. (e.g the line where a tape starts and the line where a tape ends). Since this function also returns a `Data` object,
-all other functions available can then be applied to it (e.g analyze pod/keyword information for a specific tape).
+Since one of the main interests is to evaluate handwritten data of specific tape recordings, we can also use two
+specific lines of the dataset to extract only data between them. (e.g the line where a tape starts and the line where a
+tape ends). Since this function also returns a `Data` object, all other functions available can then be applied to it (
+e.g analyze pod/keyword information for a specific tape).
 
 ```python
 tape_mentions = data.with_tape_mentions(tapes=["322B"])
@@ -103,9 +110,10 @@ pods = data.unique_pods()
 
 ### Plotting
 
-A function `get_axis` to get x and y axis for plotting data is also provided.
-This makes it easy to visualize pod/keyword/tape information quickly. It creates the x axis (time) according to the time ranges within the data automatically,
-and generates the y axis data according to a lambda function passed to it that operates on the time ranges of the data.
+A function `get_axis` to get x and y axis for plotting data is also provided. This makes it easy to visualize
+pod/keyword/tape information quickly. It creates the x axis (time) according to the time ranges within the data
+automatically, and generates the y axis data according to a lambda function passed to it that operates on the time
+ranges of the data.
 
 ```python
 # The function passed to the get_axis function gets the count all A pod mentions and divides 
@@ -128,7 +136,6 @@ plot(x,
 # Calling plt.savefig will enable saving the generated plots
 ```
 
-
 ### Saving
 
 Filtered data can then be saved to `json` files that contain only the relevant data.
@@ -144,8 +151,8 @@ data.save("322B_tape_mentions.json")
 
 ## Handwritten data
 
-This tools expect as an entry point a collection of `json` objects containing basic line information for the images processed.
-This data is then converted into separate time ranges, which can be loaded in order to be manipulated.
+This tools expect as an entry point a collection of `json` objects containing basic line information for the images
+processed. This data is then converted into separate time ranges, which can be loaded in order to be manipulated.
 
 ```json
 [
@@ -166,13 +173,14 @@ This data is then converted into separate time ranges, which can be loaded in or
 
 ## Time range data format
 
-The set of images and lines provided is then converted into a format already containing metadata about the handwritten text.
-A list of pod/invididuals identified in the text, as well as whether tape information has been extracted is given in the metadata.
+The set of images and lines provided is then converted into a format already containing metadata about the handwritten
+text. A list of pod/invididuals identified in the text, as well as whether tape information has been extracted is given
+in the metadata.
 
 ```json
 [
   {
-    "range": "jul0183_jan0984", 
+    "range": "jul0183_jan0984",
     "pages": [
       {
         "lines": [
@@ -181,12 +189,14 @@ A list of pod/invididuals identified in the text, as well as whether tape inform
             "filename": "jul0183_nov2284_pg001.png",
             "index": "1",
             "text": "A1 calls. #312B 100%",
-            "pod_mentions": ["A1"],
+            "pod_mentions": [
+              "A1"
+            ],
             "tape": {
-              "number": "312", 
-              "side": "B", 
-              "starts": false, 
-              "ends":  true
+              "number": "312",
+              "side": "B",
+              "starts": false,
+              "ends": true
             }
           }
         ]
