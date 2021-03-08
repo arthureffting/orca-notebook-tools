@@ -1,4 +1,4 @@
-`Please note: all example scripts' imports are realtive to the project root directory`
+`Please note: all example scripts' imports are relative to the project root directory`
 
 # Orcalab notebooks analysis tools
 
