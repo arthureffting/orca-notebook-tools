@@ -1,9 +1,8 @@
 import datetime
 import json
-import os
 import re
 
-from src.utils import match, contains
+from analysis.src.utils import contains
 
 
 class LineDetail:

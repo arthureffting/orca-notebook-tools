@@ -1,6 +1,4 @@
-from src.breakpoint import Breakpoint
-from src.line_detail import LineDetail
-import datetime
+from analysis.src.line_detail import LineDetail
 
 
 class PageDetail:

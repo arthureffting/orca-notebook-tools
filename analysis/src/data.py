@@ -1,6 +1,6 @@
 import json
-from src.page_detail import PageDetail
-from src.time_range import TimeRange
+from analysis.src.page_detail import PageDetail
+from analysis.src.time_range import TimeRange
 
 
 class Data:

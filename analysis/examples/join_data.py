@@ -1,5 +1,5 @@
-from src.data import Data
-from src.utils import plot
+from analysis.src.data import Data
+from analysis.src.utils import plot
 import datetime
 
 data = Data.read("timed_results.json")

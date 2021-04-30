@@ -1,8 +1,8 @@
 import datetime
 import itertools
 import numpy as np
-from src.breakpoint import Breakpoint
-from src.utils import str_to_range, range_to_str
+from analysis.src.breakpoint import Breakpoint
+from analysis.src.utils import str_to_range, range_to_str
 
 
 class TimeRange:

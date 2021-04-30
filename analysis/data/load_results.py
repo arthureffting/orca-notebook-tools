@@ -2,9 +2,9 @@ import json
 import os
 import statistics
 
-from src.data import Data
-from src.page_detail import PageDetail
-from src.time_range import TimeRange
+from analysis.src.data import Data
+from analysis.src.page_detail import PageDetail
+from analysis.src.time_range import TimeRange
 
 
 def load(years=None):
