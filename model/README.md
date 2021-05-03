@@ -100,3 +100,8 @@ These files are arrays of two-dimensional arrays in the format `[<path to page J
 |learning_rate| Learning rate of the model | 1e-4|
 | name | Name used to store models | "training" |
 | output | Output folder to store models | "snapshots/sol" |
+
+
+# Running
+
+### Todo
