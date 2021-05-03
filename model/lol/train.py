@@ -35,10 +35,7 @@ parser.add_argument("--patch_size", default=64)
 parser.add_argument("--min_height", default=8)
 
 # Training techniques
-parser.add_argument("--name", default="lol_training_patch_64")
-parser.add_argument("--reset-threshold", default=128)
-parser.add_argument("--max_steps", default=6)
-parser.add_argument("--random-sol", default=True)
+parser.add_argument("--name", default="training")
 parser.add_argument("--output", default="snapshots/lol")
 
 args = parser.parse_args()
