@@ -51,7 +51,7 @@ Each image JSON consists of an array of lines containing the following informati
  }
 ]
 ```
-A script for converting page annotations similar to the IAM dataset can be found under [todo](TODO).
+A script for converting page annotations similar to the IAM dataset can be found [here](/utils/conversion/convert_iam_splits.py).
 
 # Training
 
