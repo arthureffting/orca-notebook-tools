@@ -23,9 +23,9 @@ parser.add_argument("--dataset_folder", default="dataset")
 
 # Learning parameters
 parser.add_argument("--batch_size", default=1)
-parser.add_argument("--images_per_epoch", default=500)
-parser.add_argument("--testing_images_per_epoch", default=50)
-parser.add_argument("--stop_after_no_improvement", default=200)
+parser.add_argument("--images_per_epoch", default=10000)
+parser.add_argument("--testing_images_per_epoch", default=None)
+parser.add_argument("--stop_after_no_improvement", default=20)
 parser.add_argument("--learning_rate", default=0.000015)
 
 # Patching
