@@ -51,7 +51,9 @@ Each image JSON should contain page information in the following format:
 A script for converting page annotations similar to the IAM dataset can be found under [todo](TODO).
 
 
-## Arguments
+### Arguments
+
+[The training script](/model/lol/train.py) can be started using the following arguments
 
 |Name | Description  | Default|
 --- | --- | ---
