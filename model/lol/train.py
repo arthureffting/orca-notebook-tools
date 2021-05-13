@@ -24,16 +24,16 @@ parser.add_argument("--dataset_folder", default="data/orcas/prepared/pages")
 
 # Learning parameters
 parser.add_argument("--batch_size", default=1)
-parser.add_argument("--images_per_epoch", default=50)
-parser.add_argument("--testing_images_per_epoch", default=10)
+parser.add_argument("--images_per_epoch", default=10000)
+parser.add_argument("--testing_images_per_epoch", default=None) # Leave none to use all
 parser.add_argument("--stop_after_no_improvement", default=20)
-parser.add_argument("--learning_rate", default=0.0001) # iam -> 0.000015
+parser.add_argument("--learning_rate", default=0.0001)  # iam -> 0.000015
 
 # Patching
-parser.add_argument("--tsa_size", default=5)
-parser.add_argument("--patch_ratio", default=3) # iam -> 5
-parser.add_argument("--patch_size", default=64)
-parser.add_argument("--min_height", default=8)
+parser.add_argument("--tsa_size", default=5)  # Amount of previous steps stored in the attention mechanism
+parser.add_argument("--patch_ratio", default=3)  # iam -> 5
+parser.add_argument("--patch_size", default=64)  # How big are the patches in pixels
+parser.add_argument("--min_height", default=8)  # Min line size in pixels, to prevent going to 0 during training
 
 # Training techniques
 parser.add_argument("--name", default="training")

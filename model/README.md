@@ -101,7 +101,3 @@ These files are arrays of two-dimensional arrays in the format `[<path to page J
 | name | Name used to store models | "training" |
 | output | Output folder to store models | "snapshots/sol" |
 
-
-# Running
-
-### Todo
