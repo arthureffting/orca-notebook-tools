@@ -1,0 +1,269 @@
+[
+ {
+  "gt": "",
+  "image_path": "data/orcas/prepared/pages/training/sep2586_sep0387_pg052.jpg-15.png",
+  "sol": {
+   "x0": 62.0,
+   "x1": 58.0,
+   "y0": 507.0,
+   "y1": 507.0
+  },
+  "steps": [
+   {
+    "base_point": [
+     30.447241493006818,
+     501.3008372396561
+    ],
+    "lower_point": [
+     30.164339704236568,
+     503.6467982671716
+    ],
+    "stop_confidence": 0.0,
+    "upper_point": [
+     33.78852237456039,
+     473.59328981063214
+    ]
+   },
+   {
+    "base_point": [
+     58.154788922030775,
+     504.6421181212097
+    ],
+    "lower_point": [
+     58.0,
+     507.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     62.0,
+     477.0
+    ]
+   },
+   {
+    "base_point": [
+     86.0,
+     508.0
+    ],
+    "lower_point": [
+     85.0,
+     516.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     86.0,
+     486.0
+    ]
+   },
+   {
+    "base_point": [
+     103.0,
+     508.0
+    ],
+    "lower_point": [
+     103.0,
+     508.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     103.0,
+     486.0
+    ]
+   },
+   {
+    "base_point": [
+     117.0,
+     508.0
+    ],
+    "lower_point": [
+     117.0,
+     508.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     118.0,
+     480.0
+    ]
+   },
+   {
+    "base_point": [
+     145.0,
+     509.0
+    ],
+    "lower_point": [
+     145.0,
+     509.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     145.0,
+     486.0
+    ]
+   },
+   {
+    "base_point": [
+     168.0,
+     509.0
+    ],
+    "lower_point": [
+     168.0,
+     509.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     168.0,
+     487.0
+    ]
+   },
+   {
+    "base_point": [
+     182.0,
+     509.0
+    ],
+    "lower_point": [
+     182.0,
+     509.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     183.567435099734,
+     487.0559086037238
+    ]
+   },
+   {
+    "base_point": [
+     196.0,
+     510.0
+    ],
+    "lower_point": [
+     196.0,
+     510.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     196.0,
+     488.0
+    ]
+   },
+   {
+    "base_point": [
+     210.0,
+     510.0
+    ],
+    "lower_point": [
+     210.0,
+     510.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     210.0,
+     488.0
+    ]
+   },
+   {
+    "base_point": [
+     224.0,
+     510.0
+    ],
+    "lower_point": [
+     224.0,
+     510.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     225.22034043169552,
+     488.03387222948095
+    ]
+   },
+   {
+    "base_point": [
+     242.0,
+     511.0
+    ],
+    "lower_point": [
+     242.0,
+     511.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     242.0,
+     489.0
+    ]
+   },
+   {
+    "base_point": [
+     260.0,
+     511.0
+    ],
+    "lower_point": [
+     260.0,
+     511.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     259.83910387203304,
+     489.0005883615946
+    ]
+   },
+   {
+    "base_point": [
+     277.0,
+     511.0
+    ],
+    "lower_point": [
+     277.0,
+     511.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     277.0,
+     489.0
+    ]
+   },
+   {
+    "base_point": [
+     287.9998756022248,
+     511.05231381825485
+    ],
+    "lower_point": [
+     287.9998756022248,
+     511.05231381825485
+    ],
+    "stop_confidence": 0.38218157226562494,
+    "upper_point": [
+     288.10450323873454,
+     489.0525626138053
+    ]
+   },
+   {
+    "base_point": [
+     306.8096628820291,
+     511.14177044747066
+    ],
+    "lower_point": [
+     306.8096628820291,
+     511.14177044747066
+    ],
+    "stop_confidence": 0.561515625,
+    "upper_point": [
+     306.91429051853885,
+     489.14201924302114
+    ]
+   },
+   {
+    "base_point": [
+     322.04559057867067,
+     511.2142303171355
+    ],
+    "lower_point": [
+     322.04559057867067,
+     511.2142303171355
+    ],
+    "stop_confidence": 0.825,
+    "upper_point": [
+     322.15021821518036,
+     489.214479112686
+    ]
+   }
+  ]
+ }
+]

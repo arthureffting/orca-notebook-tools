@@ -1,0 +1,314 @@
+[
+ {
+  "gt": "",
+  "image_path": "data/orcas/prepared/pages/training/sep0387_sep1588_pg004.jpg-40.png",
+  "sol": {
+   "x0": 483.0,
+   "x1": 484.0,
+   "y0": 527.0,
+   "y1": 527.0
+  },
+  "steps": [
+   {
+    "base_point": [
+     458.3095633370838,
+     527.1651777808955
+    ],
+    "lower_point": [
+     458.3190764554477,
+     527.5872054322307
+    ],
+    "stop_confidence": 0.0,
+    "upper_point": [
+     457.7325528455124,
+     501.5674323059633
+    ]
+   },
+   {
+    "base_point": [
+     483.907308812016,
+     526.5881672893241
+    ],
+    "lower_point": [
+     484.0,
+     527.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     483.0,
+     501.0
+    ]
+   },
+   {
+    "base_point": [
+     510.0,
+     526.0
+    ],
+    "lower_point": [
+     510.0,
+     529.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     509.0,
+     503.0
+    ]
+   },
+   {
+    "base_point": [
+     533.0,
+     525.0
+    ],
+    "lower_point": [
+     533.0,
+     525.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     532.0,
+     502.0
+    ]
+   },
+   {
+    "base_point": [
+     556.0,
+     524.0
+    ],
+    "lower_point": [
+     556.0,
+     524.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     555.0,
+     501.0
+    ]
+   },
+   {
+    "base_point": [
+     580.0,
+     523.0
+    ],
+    "lower_point": [
+     580.0,
+     523.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     580.0,
+     500.0
+    ]
+   },
+   {
+    "base_point": [
+     603.0,
+     523.0
+    ],
+    "lower_point": [
+     603.0,
+     523.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     604.2918844829323,
+     501.0379637901501
+    ]
+   },
+   {
+    "base_point": [
+     620.0,
+     524.0
+    ],
+    "lower_point": [
+     620.0,
+     524.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     620.0,
+     498.0
+    ]
+   },
+   {
+    "base_point": [
+     646.0,
+     524.0
+    ],
+    "lower_point": [
+     646.0,
+     524.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     646.0,
+     487.0
+    ]
+   },
+   {
+    "base_point": [
+     683.0,
+     524.0
+    ],
+    "lower_point": [
+     683.0,
+     524.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     683.0,
+     502.0
+    ]
+   },
+   {
+    "base_point": [
+     705.0,
+     524.0
+    ],
+    "lower_point": [
+     705.0,
+     524.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     705.0,
+     499.0
+    ]
+   },
+   {
+    "base_point": [
+     730.0,
+     524.0
+    ],
+    "lower_point": [
+     730.0,
+     524.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     730.0,
+     491.0
+    ]
+   },
+   {
+    "base_point": [
+     763.0,
+     524.0
+    ],
+    "lower_point": [
+     763.0,
+     528.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     763.0,
+     499.0
+    ]
+   },
+   {
+    "base_point": [
+     788.0,
+     523.0
+    ],
+    "lower_point": [
+     788.0,
+     533.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     788.0,
+     501.0
+    ]
+   },
+   {
+    "base_point": [
+     808.0,
+     523.0
+    ],
+    "lower_point": [
+     808.0,
+     523.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     822.0980727996314,
+     506.1108217092632
+    ]
+   },
+   {
+    "base_point": [
+     828.0,
+     523.0
+    ],
+    "lower_point": [
+     828.0,
+     523.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     828.0,
+     501.0
+    ]
+   },
+   {
+    "base_point": [
+     840.9990634600081,
+     522.8439578176204
+    ],
+    "lower_point": [
+     840.9990634600081,
+     522.8439578176204
+    ],
+    "stop_confidence": 0.38218157226562494,
+    "upper_point": [
+     840.7349920744426,
+     500.84554273145284
+    ]
+   },
+   {
+    "base_point": [
+     852.6982205740154,
+     522.7035198534788
+    ],
+    "lower_point": [
+     852.6982205740154,
+     522.7035198534788
+    ],
+    "stop_confidence": 0.46325039062499995,
+    "upper_point": [
+     852.4341491884501,
+     500.70510476731124
+    ]
+   },
+   {
+    "base_point": [
+     872.7037792389681,
+     522.4633709347967
+    ],
+    "lower_point": [
+     872.7037792389681,
+     522.4633709347967
+    ],
+    "stop_confidence": 0.6806249999999999,
+    "upper_point": [
+     872.4397078534028,
+     500.4649558486291
+    ]
+   },
+   {
+    "base_point": [
+     888.9082817575797,
+     522.2688503106641
+    ],
+    "lower_point": [
+     888.9082817575797,
+     522.2688503106641
+    ],
+    "stop_confidence": 1,
+    "upper_point": [
+     888.8253545441338,
+     515.3606150264139
+    ]
+   }
+  ]
+ }
+]

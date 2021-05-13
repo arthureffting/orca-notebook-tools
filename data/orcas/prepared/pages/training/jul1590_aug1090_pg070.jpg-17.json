@@ -1,0 +1,404 @@
+[
+ {
+  "gt": "",
+  "image_path": "data/orcas/prepared/pages/training/jul1590_aug1090_pg070.jpg-17.png",
+  "sol": {
+   "x0": 59.0,
+   "x1": 58.0,
+   "y0": 581.0,
+   "y1": 581.0
+  },
+  "steps": [
+   {
+    "base_point": [
+     30.649959557625188,
+     580.0743318443348
+    ],
+    "lower_point": [
+     30.639168857224742,
+     580.378888473908
+    ],
+    "stop_confidence": 0.0,
+    "upper_point": [
+     31.608259357661705,
+     553.0272870382614
+    ]
+   },
+   {
+    "base_point": [
+     57.69700436369851,
+     581.0326316443713
+    ],
+    "lower_point": [
+     58.0,
+     581.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     59.0,
+     554.0
+    ]
+   },
+   {
+    "base_point": [
+     85.0,
+     582.0
+    ],
+    "lower_point": [
+     85.0,
+     582.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     86.0,
+     555.0
+    ]
+   },
+   {
+    "base_point": [
+     112.0,
+     583.0
+    ],
+    "lower_point": [
+     112.0,
+     583.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     112.0,
+     561.0
+    ]
+   },
+   {
+    "base_point": [
+     134.0,
+     582.0
+    ],
+    "lower_point": [
+     134.0,
+     582.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     134.0,
+     560.0
+    ]
+   },
+   {
+    "base_point": [
+     154.0,
+     582.0
+    ],
+    "lower_point": [
+     154.0,
+     582.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     154.0,
+     560.0
+    ]
+   },
+   {
+    "base_point": [
+     174.0,
+     582.0
+    ],
+    "lower_point": [
+     174.0,
+     582.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     174.0,
+     560.0
+    ]
+   },
+   {
+    "base_point": [
+     193.0,
+     582.0
+    ],
+    "lower_point": [
+     193.0,
+     582.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     193.0,
+     555.0
+    ]
+   },
+   {
+    "base_point": [
+     220.0,
+     583.0
+    ],
+    "lower_point": [
+     220.0,
+     583.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     220.0,
+     558.0
+    ]
+   },
+   {
+    "base_point": [
+     245.0,
+     583.0
+    ],
+    "lower_point": [
+     245.0,
+     583.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     245.0,
+     560.0
+    ]
+   },
+   {
+    "base_point": [
+     268.0,
+     583.0
+    ],
+    "lower_point": [
+     268.0,
+     583.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     268.0,
+     561.0
+    ]
+   },
+   {
+    "base_point": [
+     287.0,
+     583.0
+    ],
+    "lower_point": [
+     287.0,
+     583.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     285.7796595683045,
+     561.033872229481
+    ]
+   },
+   {
+    "base_point": [
+     305.0,
+     582.0
+    ],
+    "lower_point": [
+     305.0,
+     582.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     303.627677704586,
+     560.0428432733764
+    ]
+   },
+   {
+    "base_point": [
+     321.0,
+     581.0
+    ],
+    "lower_point": [
+     321.0,
+     581.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     319.536581768477,
+     559.0487265271546
+    ]
+   },
+   {
+    "base_point": [
+     336.0,
+     580.0
+    ],
+    "lower_point": [
+     336.0,
+     580.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     336.0,
+     558.0
+    ]
+   },
+   {
+    "base_point": [
+     352.0,
+     580.0
+    ],
+    "lower_point": [
+     352.0,
+     580.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     352.0,
+     558.0
+    ]
+   },
+   {
+    "base_point": [
+     370.0,
+     580.0
+    ],
+    "lower_point": [
+     370.0,
+     580.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     370.0,
+     558.0
+    ]
+   },
+   {
+    "base_point": [
+     384.0,
+     580.0
+    ],
+    "lower_point": [
+     384.0,
+     580.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     384.0,
+     558.0
+    ]
+   },
+   {
+    "base_point": [
+     402.0,
+     580.0
+    ],
+    "lower_point": [
+     402.0,
+     580.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     400.9535667128601,
+     558.0249009700624
+    ]
+   },
+   {
+    "base_point": [
+     423.0,
+     579.0
+    ],
+    "lower_point": [
+     423.0,
+     579.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     422.7986560377392,
+     557.0009213690922
+    ]
+   },
+   {
+    "base_point": [
+     444.0,
+     578.0
+    ],
+    "lower_point": [
+     444.0,
+     578.0
+    ],
+    "stop_confidence": 0,
+    "upper_point": [
+     444.0,
+     556.0
+    ]
+   },
+   {
+    "base_point": [
+     459.9490347287371,
+     576.7239548512931
+    ],
+    "lower_point": [
+     459.9490347287371,
+     576.7239548512931
+    ],
+    "stop_confidence": 0.38218157226562494,
+    "upper_point": [
+     458.19447264926515,
+     554.7940320992797
+    ]
+   },
+   {
+    "base_point": [
+     474.3031659846005,
+     575.5755142174569
+    ],
+    "lower_point": [
+     474.3031659846005,
+     575.5755142174569
+    ],
+    "stop_confidence": 0.46325039062499995,
+    "upper_point": [
+     472.5486039051286,
+     553.6455914654434
+    ]
+   },
+   {
+    "base_point": [
+     487.2218841148776,
+     574.5419176470043
+    ],
+    "lower_point": [
+     487.2218841148776,
+     574.5419176470043
+    ],
+    "stop_confidence": 0.561515625,
+    "upper_point": [
+     485.46732203540563,
+     552.6119948949909
+    ]
+   },
+   {
+    "base_point": [
+     498.84873043212696,
+     573.611680733597
+    ],
+    "lower_point": [
+     498.84873043212696,
+     573.611680733597
+    ],
+    "stop_confidence": 0.6806249999999999,
+    "upper_point": [
+     497.09416835265506,
+     551.6817579815836
+    ]
+   },
+   {
+    "base_point": [
+     518.7306376346235,
+     572.0209756116706
+    ],
+    "lower_point": [
+     518.7306376346235,
+     572.0209756116706
+    ],
+    "stop_confidence": 1,
+    "upper_point": [
+     518.0524949247496,
+     563.5450046463958
+    ]
+   }
+  ]
+ }
+]
