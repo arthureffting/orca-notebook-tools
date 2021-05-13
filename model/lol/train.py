@@ -14,23 +14,24 @@ from model.lol.dataset import LolDataset
 from utils.dataset_parser import load_file_list_direct
 from utils.dice_utils import steps_to_points, points_to_polygon
 from utils.files import create_folders, save_to_json
+from utils.paint_lol_run import paint_model_run
 from utils.wrapper import DatasetWrapper
 
 parser = argparse.ArgumentParser(description='Prepare data for training')
 
 # Folder containing sets
-parser.add_argument("--dataset_folder", default="dataset")
+parser.add_argument("--dataset_folder", default="data/orcas/prepared/pages")
 
 # Learning parameters
 parser.add_argument("--batch_size", default=1)
-parser.add_argument("--images_per_epoch", default=10000)
-parser.add_argument("--testing_images_per_epoch", default=None)
+parser.add_argument("--images_per_epoch", default=50)
+parser.add_argument("--testing_images_per_epoch", default=10)
 parser.add_argument("--stop_after_no_improvement", default=20)
-parser.add_argument("--learning_rate", default=0.000015)
+parser.add_argument("--learning_rate", default=0.0001) # iam -> 0.000015
 
 # Patching
 parser.add_argument("--tsa_size", default=5)
-parser.add_argument("--patch_ratio", default=5)
+parser.add_argument("--patch_ratio", default=3) # iam -> 5
 parser.add_argument("--patch_size", default=64)
 parser.add_argument("--min_height", default=8)
 
@@ -71,14 +72,12 @@ test_dataloader = test_dataloader if args.testing_images_per_epoch is None else 
 
 validation_path = os.path.join(args.dataset_folder, "validation.json")
 validation_list = load_file_list_direct(validation_path)
-validation_set = LolDataset(validation_list[0:1])
+validation_set = LolDataset(validation_list)
 validation_loader = DataLoader(validation_set,
                                batch_size=1,
                                shuffle=False,
                                num_workers=0,
                                collate_fn=dataset.collate)
-
-print("Loaded datasets")
 
 lol = LineOutlinerTsa(tsa_size=args.tsa_size,
                       patch_size=args.patch_size,
@@ -94,6 +93,7 @@ best_loss = np.inf
 cnt_since_last_improvement = 0
 all_epoch_data = []
 
+
 def loss_function(predicted, desired):
     upper = torch.nn.MSELoss()(predicted[:, 0], desired[:, 0].cuda())
     baseline = torch.nn.MSELoss()(predicted[:, 1], desired[:, 1].cuda())
@@ -101,6 +101,7 @@ def loss_function(predicted, desired):
     angle = torch.nn.MSELoss()(predicted[:, 3, 0], desired[:, 3, 0].cuda())
     confidence = torch.nn.MSELoss()(predicted[:, 4, 0], desired[:, 4, 0].cuda())
     return [upper, baseline, lower, angle, confidence]
+
 
 for epoch in range(1000):
 
@@ -160,7 +161,7 @@ for epoch in range(1000):
     create_folders(screenshot_path)
     torch.save(lol.state_dict(), model_path)
     time.sleep(1)
-    # paint_model_run(model_path, validation_loader, destination=screenshot_path)
+    paint_model_run(model_path, validation_list[0][1], validation_loader, destination=screenshot_path)
 
     with torch.no_grad():
         for index, x in enumerate(test_dataloader):

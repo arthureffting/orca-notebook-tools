@@ -9,10 +9,10 @@ from utils.line_augmentations import LineAugmentation
 from utils.line_dewarper import Dewarper2
 from utils.read_splits import Split
 
-# Folder containing the standard splits for the IAM dataset
+# Folder containing the standard splits for the IAM data
 database_splits_folder = "data/iam/splits"
 
-# Folder containing the IAM dataset
+# Folder containing the IAM data
 database_original_folder = "data/iam"
 
 # Folder in which to store the transformed data
@@ -37,7 +37,7 @@ for dataset in splits.set_map:
     # Create a folder with its name
     # Extract lines
     # Create JSON with line information
-    # Add to dataset json data
+    # Add to data json data
     for pair in pairs:
         folder_path = os.path.join(target_folder, "pages", "data", pair.index)
         create_folders(os.path.join(folder_path, "something.txt"))

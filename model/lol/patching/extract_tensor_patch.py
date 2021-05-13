@@ -3,7 +3,7 @@ import torch
 from torch.autograd import Variable
 
 # input = tensor([x,y,angle,size])
-from models.lol.patching.gridder import Gridder
+from model.lol.patching.gridder import Gridder
 
 
 def extract_tensor_patch(img_tensor, input, size=64):

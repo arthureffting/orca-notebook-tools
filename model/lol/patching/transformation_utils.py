@@ -6,7 +6,7 @@ from torch.nn.modules.module import Module
 
 import numpy as np
 
-from models.lol.patching.fast_inverse import inverse_torch
+from model.lol.patching.fast_inverse import inverse_torch
 
 
 def compute_renorm_matrix(img):

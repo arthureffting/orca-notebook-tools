@@ -1,7 +1,7 @@
 
 import numpy as np
 
-from scripts.models.sol import crop_utils
+from model.sol import crop_utils
 
 
 class CropTransform(object):

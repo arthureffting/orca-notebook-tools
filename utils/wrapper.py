@@ -28,4 +28,4 @@ class DatasetWrapper(object):
                 try:
                     return next(self.iter_dataset)
                 except StopIteration:
-                    raise Exception("Appears as if dataset is empty")
+                    raise Exception("Appears as if data is empty")

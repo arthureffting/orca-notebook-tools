@@ -1,7 +1,7 @@
 import torch
 from shapely.geometry import Point, LineString
 
-from models.lol.lol_3 import LineOutlinerTsa
+from model.lol.lol import LineOutlinerTsa
 from utils.files import create_folders
 from utils.geometry import angle_between_points, get_new_point
 from utils.painter import Painter

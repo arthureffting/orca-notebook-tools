@@ -1,7 +1,7 @@
 import torch
 from torch.autograd import Variable
 
-from models.lol.patching import transformation_utils
+from model.lol.patching import transformation_utils
 
 
 def get_patches(image, crop_window, grid_gen, allow_end_early=False):

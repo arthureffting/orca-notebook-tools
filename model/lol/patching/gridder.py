@@ -2,9 +2,9 @@ import numpy as np
 import torch
 from torch.autograd import Variable
 
-from models.lol.patching import transformation_utils
-from models.lol.patching.fast_patch_view import get_patches
-from models.lol.patching.gridgen import GridGen
+from model.lol.patching import transformation_utils
+from model.lol.patching.fast_patch_view import get_patches
+from model.lol.patching.gridgen import GridGen
 
 
 class Gridder:
